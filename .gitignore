@@ -1,0 +1,47 @@
+# --- my logs
+errors.md
+story.md
+
+# --- Python Specific ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+# Remove the line below if you WANT to commit your notebook results/images
+# .ipynb_checkpoints/
+
+# --- Environment & Secrets ---
+.env
+.flaskenv
+*.secret
+*.pem
+credentials.json
+
+# --- Google Cloud & OS ---
+.gcloud/
+.gsutil/
+.DS_Store
+Thumbs.db
+
+# --- Data & Models (Crucial for Folder Structures) ---
+# We usually ignore the contents of these folders, but keep the folders themselves
+data/*
+!data/.gitkeep
+models/*
+!models/.gitkeep
+
+# Ignore large data files specifically
+*.csv
+*.jsonl
+*.h5
+*.pkl
+*.npy
